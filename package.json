@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "deploy": "npm run build && npx wrangler pages deploy ./out --project-name=3x10-sponsor-deck"
   },
   "dependencies": {
     "@radix-ui/react-scroll-area": "^1.2.10",
