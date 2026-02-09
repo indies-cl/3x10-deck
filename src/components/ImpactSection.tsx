@@ -25,8 +25,8 @@ export function ImpactSection({ lightboxImage, setLightboxImage }: ImpactSection
 
     let rafId: number;
     let lastTime = 0;
-    const speedMobile = 45; // px/sec
-    const speedDesktop = 35; // px/sec
+    const speedMobile = 45;
+    const speedDesktop = 35;
 
     const tick = (now: number) => {
       const dt = Math.min((now - lastTime) / 1000, 0.1);
@@ -93,7 +93,11 @@ export function ImpactSection({ lightboxImage, setLightboxImage }: ImpactSection
           <div className="absolute inset-y-0 right-0 w-12 bg-gradient-to-l from-background to-transparent z-10 pointer-events-none" />
           <div
             ref={impactMobileRef}
-            className="flex gap-4 overflow-x-auto [-ms-overflow-style:none] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden py-2 px-4"
+            className="flex gap-4 overflow-x-auto overflow-y-hidden [scrollbar-width:none] [&::-webkit-scrollbar]:hidden py-2 px-4 touch-none"
+            onWheel={(e) => {
+              e.preventDefault();
+              window.scrollBy({ top: e.deltaY, behavior: "auto" });
+            }}
           >
             {[...impactoImages, ...impactoImages].map((filename, idx) => (
               <button
@@ -118,7 +122,11 @@ export function ImpactSection({ lightboxImage, setLightboxImage }: ImpactSection
           <div className="absolute inset-x-0 bottom-0 h-8 bg-gradient-to-t from-background to-transparent z-10 pointer-events-none" />
           <div
             ref={impactDesktopRef}
-            className="h-[28rem] overflow-y-auto overflow-x-hidden [-ms-overflow-style:none] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden py-2"
+            className="h-[28rem] overflow-y-auto overflow-x-hidden [scrollbar-width:none] [&::-webkit-scrollbar]:hidden py-2 touch-none"
+            onWheel={(e) => {
+              e.preventDefault();
+              window.scrollBy({ top: e.deltaY, behavior: "auto" });
+            }}
           >
             <div className="flex flex-col gap-4 pb-4">
               {[

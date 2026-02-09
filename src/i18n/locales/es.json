@@ -1,1 +1,128 @@
-{"hero": {"title": "3x10.org", "tagline": "3 días. 10 builders técnicos. $3k USD grant para cada uno", "subtitle": "el programa más intensivo para founders latinoamericanos", "cta": "construye, lanza y haz pitch. equity-free", "problem": "latam tiene talento de clase mundial pero carece de capital de ejecución enfocado", "solution": "estamos solucionando eso", "imageAlt": "3x10"}, "program": {"title": "programa", "intro": "10 founders técnicos. 3 días en nuestro hacker-house en santiago. cada uno recibe $3.000 equity-free para construir", "whatHappens": "qué pasa:", "items": ["sprint intensivo de build con mentores dedicados, founders con experiencia", "acceso a la red de founders de chile", "demo day con inversionistas"], "venue": "la primera edición será en la casa de platanus en chile, el VC más activo de la región"}, "target": {"title": "perfil", "intro": "founders técnicos, 20-28 años, en latam", "profile": "perfil:", "items": ["co-founder técnico o solo-founder excepcional construyendo productos de software", "historial de shipping code (producto en vivo)", "señal temprana: usuarios, revenue, o métrica de traction convincente", "puede comprometerse 3 días full-time en santiago"], "notRequired": "no requerido: aceleradora formal, backing de VC", "required": "requerido: bias a la acción, prowess técnico, hambre"}, "sponsorship": {"title": "paquetes de sponsors", "intro": "contribuciones en efectivo o equity. flexible para cada sponsor.", "basic": {"name": "dev credits partner", "price": "mín. 3k", "currency": "credits", "items": ["logo en landing page", "logo en merchandising (sm)", "mención en apertura/cierre"], "confirmed": "sponsors confirmados:"}, "partner": {"name": "gold sponsor", "price": "$5k", "currency": "usd", "items": ["logo en landing page", "logo grande en merch", "mención en linkedin", "info de participantes"], "confirmed": "sponsors confirmados:"}, "exclusive": {"name": "exclusive sponsor", "price": "$10k", "currency": "usd", "items": ["evento conjunto: 3x10 & [sponsor] exclusive", "logo al mismo nivel que 3x10", "logo en stream en todo momento", "todo lo del plan gold"], "confirmed": "sponsor confirmado:"}, "placeholder": "[logo]"}, "dates": {"title": "fechas límite", "first": {"label": "primera fecha límite", "items": ["logo en poleras asegurado", "mención en publicaciones tempranas", "máxima visibilidad"]}, "last": {"label": "última llamada", "description": "fecha final para cerrar sponsorship. logo en merchandising no asegurado."}, "placeholder": "[fecha]"}, "sidebar": {"sponsors": "sponsors", "hero": "3x10", "program": "programa", "target": "perfil", "sponsorship": "sponsorship", "dates": "fechas", "impact": "distribution"}, "footer": {"tagline": "3x10 sponsor deck"}, "impact": {"title": "[Impacto en redes]", "intro": "in 6 months we reached 2m views just from the founders' posts.", "distribution": {"title": "[distribution]", "preEvent": "pre-event: 3 weeks of marketing", "communityPartners": "community partners:", "partners": ["indies.la: largest collective of builders in latin america, from indie-hackers to yc-backed founders", "platanus: most active venture capital firm in the region", "latec: latin american committee for entrepreneurship and technology, combined audience of +10k members"], "post": "post: case study + metrics deck", "strategyTitle": "[strategy]"}, "albumLink": "puedes ver el album completo", "albumLinkHere": "aquí"}}
+{
+  "hero": {
+    "title": "3x10.org",
+    "tagline": "3 días. 10 builders técnicos. $3k USD grant para cada uno",
+    "subtitle": "el programa más intensivo para founders latinoamericanos",
+    "cta": "construye, lanza y haz pitch. equity-free",
+    "problem": "latam tiene talento de clase mundial pero carece de capital de ejecución enfocado",
+    "solution": "estamos solucionando eso",
+    "imageAlt": "3x10"
+  },
+  "program": {
+    "title": "programa",
+    "intro": "10 founders técnicos. 3 días en nuestro hacker-house en santiago. cada uno recibe $3.000 equity-free para construir",
+    "whatHappens": "qué pasa:",
+    "items": [
+      "sprint intensivo de build con mentores dedicados, founders con experiencia",
+      "acceso a la red de founders de chile",
+      "demo day con inversionistas"
+    ],
+    "venue": "la primera edición será en la casa de platanus en chile, el VC más activo de la región"
+  },
+  "target": {
+    "title": "perfil",
+    "intro": "founders técnicos, 20-28 años, en latam",
+    "profile": "perfil:",
+    "items": [
+      "co-founder técnico o solo-founder excepcional construyendo productos de software",
+      "historial de shipping code (producto en vivo)",
+      "señal temprana: usuarios, revenue, o métrica de traction convincente",
+      "puede comprometerse 3 días full-time en santiago"
+    ],
+    "notRequired": "no requerido: aceleradora formal, backing de VC",
+    "required": "requerido: bias a la acción, prowess técnico, hambre"
+  },
+  "sponsorship": {
+    "title": "paquetes de sponsors",
+    "intro": "contribuciones en efectivo o equity. flexible para cada sponsor.",
+    "basic": {
+      "name": "dev credits partner",
+      "price": "mín. 3k",
+      "currency": "credits",
+      "items": [
+        "logo en landing page",
+        "logo en merchandising (sm)",
+        "mención en apertura/cierre"
+      ],
+      "confirmed": "sponsors confirmados:"
+    },
+    "partner": {
+      "name": "gold sponsor",
+      "price": "$5k",
+      "currency": "usd",
+      "items": [
+        "logo en landing page",
+        "logo grande en merch",
+        "mención en linkedin",
+        "info de participantes"
+      ],
+      "confirmed": "sponsors confirmados:"
+    },
+    "exclusive": {
+      "name": "exclusive sponsor",
+      "price": "$10k",
+      "currency": "usd",
+      "items": [
+        "evento conjunto: 3x10 & [sponsor] exclusive",
+        "logo al mismo nivel que 3x10",
+        "logo en stream en todo momento",
+        "todo lo del plan gold"
+      ],
+      "confirmed": "sponsor confirmado:"
+    },
+    "placeholder": "[logo]"
+  },
+  "dates": {
+    "title": "fechas límite",
+    "first": {
+      "label": "primera fecha límite",
+      "items": [
+        "logo en poleras asegurado",
+        "mención en publicaciones tempranas",
+        "máxima visibilidad"
+      ]
+    },
+    "last": {
+      "label": "última llamada",
+      "description": "fecha final para cerrar sponsorship. logo en merchandising no asegurado."
+    },
+    "placeholder": "[fecha]",
+    "datesTbd": "fechas por definir"
+  },
+  "sidebar": {
+    "sponsors": "sponsors",
+    "hero": "3x10",
+    "program": "programa",
+    "target": "perfil",
+    "sponsorship": "sponsorship",
+    "dates": "fechas",
+    "impact": "distribution",
+    "contact": "contacto"
+  },
+  "impact": {
+    "title": "[Impacto en redes]",
+    "intro": "in 6 months we reached 2m views just from the founders' posts.",
+    "distribution": {
+      "title": "[distribution]",
+      "preEvent": "pre-event: 3 weeks of marketing",
+      "communityPartners": "community partners:",
+      "partners": [
+        "indies.la: largest collective of builders in latin america, from indie-hackers to yc-backed founders",
+        "platanus: most active venture capital firm in the region",
+        "latec: latin american committee for entrepreneurship and technology, combined audience of +10k members"
+      ],
+      "post": "post: case study + metrics deck",
+      "strategyTitle": "[strategy]"
+    },
+    "albumLink": "puedes ver el album completo",
+    "albumLinkHere": "aquí"
+  },
+  "contact": {
+    "title": "contacto",
+    "subtitle": "preguntas? quieres sponsorear?",
+    "reachOut": "contacta a Nacho",
+    "lowKey": "preguntas? contacta a Nacho",
+    "linkedinLabel": "mensaje en linkedin",
+    "emailLabel": "email"
+  }
+}
