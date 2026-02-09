@@ -419,10 +419,6 @@ export function LandingContent() {
             </a>
           </div>
         </section>
-
-        <footer className="border-t border-border pt-8 text-center text-xs text-muted-foreground">
-          <p>{t("footer.tagline")}</p>
-        </footer>
       </main>
     </div>
   );
