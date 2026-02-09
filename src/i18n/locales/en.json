@@ -43,8 +43,7 @@
         "logo on landing page",
         "logo on merchandising (sm)",
         "mention in opening/closing"
-      ],
-      "confirmed": "confirmed sponsors:"
+      ]
     },
     "partner": {
       "name": "gold sponsor",
@@ -55,8 +54,7 @@
         "large logo on merch",
         "linkedin mention",
         "participant info"
-      ],
-      "confirmed": "confirmed sponsors:"
+      ]
     },
     "exclusive": {
       "name": "exclusive sponsor",
@@ -67,10 +65,8 @@
         "logo at same level as 3x10",
         "logo on stream at all times",
         "everything in gold plan"
-      ],
-      "confirmed": "confirmed sponsor:"
-    },
-    "placeholder": "[logo]"
+      ]
+    }
   },
   "dates": {
     "title": "key dates",
@@ -104,7 +100,7 @@
     "intro": "in 6 months we reached 2m views just from the founders' posts.",
     "distribution": {
       "title": "[distribution]",
-      "preEvent": "pre-event: 3 weeks of marketing",
+      "preEvent": "pre-event: 5 months of marketing",
       "communityPartners": "community partners:",
       "partners": [
         "indies.la: largest collective of builders in latin america, from indie-hackers to yc-backed founders",
