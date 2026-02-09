@@ -1,0 +1,99 @@
+{
+  "hero": {
+    "title": "3x10.org",
+    "tagline": "3 days. $3,000 per founder. 10 technical builders",
+    "subtitle": "the most intensive program for latin american founders",
+    "cta": "Build, ship, and pitch. equity-free",
+    "problem": "LATAM has world-class talent but lacks focused execution capital",
+    "solution": "we're fixing that",
+    "imageAlt": "3x10"
+  },
+  "program": {
+    "title": "program",
+    "intro": "10 technical founders. 3 days at our hacker-house in santiago. each receives $3,000 equity-free to build",
+    "whatHappens": "what happens:",
+    "items": [
+      "intensive build sprint with dedicated mentorship from seasoned founders",
+      "access to chile founders' network",
+      "demo day with investors"
+    ],
+    "venue": "the first edition will be hosted in platanus' house in chile, the most active VC in the region"
+  },
+  "target": {
+    "title": "target",
+    "intro": "technical founders, ages 20-28, across LATAM",
+    "profile": "profile:",
+    "items": [
+      "technical co-founder or exceptional solo-founder building software products",
+      "history of shipping code (live product)",
+      "early signal: users, revenue, or compelling traction metric",
+      "can commit 3 days full-time in Santiago"
+    ],
+    "notRequired": "not required: formal accelerator, VC backing",
+    "required": "required: bias to action, technical prowess, hunger"
+  },
+  "sponsorship": {
+    "title": "sponsorship packages",
+    "intro": "contributions in cash or equity. flexible for each sponsor.",
+    "basic": {
+      "name": "Dev Credits Partner",
+      "price": "$2-3k",
+      "currency": "in credits",
+      "items": [
+        "Logo on landing page",
+        "Logo on merchandising (sm)",
+        "Mention in opening/closing"
+      ],
+      "confirmed": "Confirmed sponsors:"
+    },
+    "partner": {
+      "name": "Gold Sponsor",
+      "price": "$5k",
+      "currency": "USD",
+      "items": [
+        "Logo on landing page",
+        "Large logo on merch",
+        "LinkedIn mention",
+        "Participant info"
+      ],
+      "confirmed": "Confirmed sponsors:"
+    },
+    "exclusive": {
+      "name": "Exclusive Sponsor",
+      "price": "$10k",
+      "currency": "USD",
+      "items": [
+        "Joint event: 3x10 & [Sponsor] Exclusive",
+        "Logo at same level as 3x10",
+        "Logo on stream at all times",
+        "Everything in Gold plan"
+      ],
+      "confirmed": "Confirmed sponsor:"
+    },
+    "placeholder": "[LOGO]"
+  },
+  "dates": {
+    "title": "key dates",
+    "first": {
+      "label": "First deadline",
+      "items": [
+        "Logo on t-shirts guaranteed",
+        "Mention in early posts",
+        "Maximum visibility"
+      ]
+    },
+    "last": {
+      "label": "Last call",
+      "description": "Final date to close sponsorship. Logo on merchandising not guaranteed."
+    },
+    "placeholder": "[DATE]"
+  },
+  "sidebar": {
+    "sponsors": "Sponsors",
+    "hero": "3x10",
+    "program": "Program",
+    "target": "Target",
+    "sponsorship": "Sponsorship",
+    "dates": "Dates"
+  }
+}

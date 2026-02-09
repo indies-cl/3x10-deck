@@ -1,5 +1,7 @@
 "use client";
 
+import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { cn } from "@/lib/utils";
 import { ScrollArea } from "@/components/ui/scroll-area";
 import { Separator } from "@/components/ui/separator";
@@ -16,6 +18,7 @@ interface SidebarProps {
   onNavigate: (id: string) => void;
   isOpen: boolean;
   onClose: () => void;
+  sponsorsLabel?: string;
 }
 
 export function Sidebar({
@@ -24,7 +27,10 @@ export function Sidebar({
   onNavigate,
   isOpen,
   onClose,
+  sponsorsLabel = "Sponsors",
 }: SidebarProps) {
+  const pathname = usePathname();
+  const isSpanish = pathname?.startsWith("/es");
   const handleNavigate = (id: string) => {
     onNavigate(id);
     onClose(); // Close sidebar on mobile after navigation
@@ -45,7 +51,7 @@ export function Sidebar({
           "fixed top-0 left-0 w-[280px] h-screen bg-sidebar border-r border-sidebar-border z-50",
           "transition-transform duration-300 ease-in-out",
           "lg:translate-x-0",
-          isOpen ? "translate-x-0" : "-translate-x-full"
+          isOpen ? "translate-x-0" : "-translate-x-full",
         )}
       >
         <ScrollArea className="h-full">
@@ -55,7 +61,7 @@ export function Sidebar({
               <div>
                 <h1 className="text-3xl text-primary tracking-tight">3x10</h1>
                 <span className="text-xs text-muted-foreground uppercase tracking-widest">
-                  Sponsors
+                  {sponsorsLabel}
                 </span>
               </div>
               {/* Close button for mobile */}
@@ -94,7 +100,7 @@ export function Sidebar({
                         "border border-transparent",
                         activeSection === section.id
                           ? "bg-primary text-primary-foreground border-primary hover:bg-primary hover:text-primary-foreground"
-                          : "text-foreground/80 hover:border-primary/30 hover:text-primary"
+                          : "text-foreground/80 hover:border-primary/30 hover:text-primary",
                       )}
                     >
                       <span className="text-xs mr-2 opacity-50">
@@ -111,7 +117,12 @@ export function Sidebar({
 
             {/* Footer */}
             <div className="text-xs text-muted-foreground">
-              <p className="mb-2">Versión en inglés →</p>
+              <Link
+                href={isSpanish ? "/" : "/es"}
+                className="hover:text-primary transition-colors"
+              >
+                {isSpanish ? "English →" : "Español →"}
+              </Link>
             </div>
           </div>
         </ScrollArea>

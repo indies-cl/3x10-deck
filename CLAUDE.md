@@ -1,0 +1,2 @@
+- USE Bun as package manager (`bun run build`, `bun add ...`)
+- IN ALL interaction and commit messages, be extremely concise and sacrifice grammar for the sake of concision
