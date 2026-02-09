@@ -332,7 +332,7 @@ export function LandingContent() {
         </section>
 
         <footer className="border-t border-border pt-8 text-center text-xs text-muted-foreground">
-          <p>3x10 Sponsor Deck</p>
+          <p>{t("footer.tagline")}</p>
         </footer>
       </main>
     </div>

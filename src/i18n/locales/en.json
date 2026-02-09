@@ -3,8 +3,8 @@
     "title": "3x10.org",
     "tagline": "3 days. $3,000 per founder. 10 technical builders",
     "subtitle": "the most intensive program for latin american founders",
-    "cta": "Build, ship, and pitch. equity-free",
-    "problem": "LATAM has world-class talent but lacks focused execution capital",
+    "cta": "build, ship, and pitch. equity-free",
+    "problem": "latam has world-class talent but lacks focused execution capital",
     "solution": "we're fixing that",
     "imageAlt": "3x10"
   },
@@ -21,13 +21,13 @@
   },
   "target": {
     "title": "target",
-    "intro": "technical founders, ages 20-28, across LATAM",
+    "intro": "technical founders, ages 20-28, across latam",
     "profile": "profile:",
     "items": [
       "technical co-founder or exceptional solo-founder building software products",
       "history of shipping code (live product)",
       "early signal: users, revenue, or compelling traction metric",
-      "can commit 3 days full-time in Santiago"
+      "can commit 3 days full-time in santiago"
     ],
     "notRequired": "not required: formal accelerator, VC backing",
     "required": "required: bias to action, technical prowess, hunger"
@@ -36,64 +36,67 @@
     "title": "sponsorship packages",
     "intro": "contributions in cash or equity. flexible for each sponsor.",
     "basic": {
-      "name": "Dev Credits Partner",
-      "price": "$2-3k",
-      "currency": "in credits",
+      "name": "dev credits partner",
+      "price": "min. 3k",
+      "currency": "credits",
       "items": [
-        "Logo on landing page",
-        "Logo on merchandising (sm)",
-        "Mention in opening/closing"
+        "logo on landing page",
+        "logo on merchandising (sm)",
+        "mention in opening/closing"
       ],
-      "confirmed": "Confirmed sponsors:"
+      "confirmed": "confirmed sponsors:"
     },
     "partner": {
-      "name": "Gold Sponsor",
+      "name": "gold sponsor",
       "price": "$5k",
-      "currency": "USD",
+      "currency": "usd",
       "items": [
-        "Logo on landing page",
-        "Large logo on merch",
-        "LinkedIn mention",
-        "Participant info"
+        "logo on landing page",
+        "large logo on merch",
+        "linkedin mention",
+        "participant info"
       ],
-      "confirmed": "Confirmed sponsors:"
+      "confirmed": "confirmed sponsors:"
     },
     "exclusive": {
-      "name": "Exclusive Sponsor",
+      "name": "exclusive sponsor",
       "price": "$10k",
-      "currency": "USD",
+      "currency": "usd",
       "items": [
-        "Joint event: 3x10 & [Sponsor] Exclusive",
-        "Logo at same level as 3x10",
-        "Logo on stream at all times",
-        "Everything in Gold plan"
+        "joint event: 3x10 & [sponsor] exclusive",
+        "logo at same level as 3x10",
+        "logo on stream at all times",
+        "everything in gold plan"
       ],
-      "confirmed": "Confirmed sponsor:"
+      "confirmed": "confirmed sponsor:"
     },
-    "placeholder": "[LOGO]"
+    "placeholder": "[logo]"
   },
   "dates": {
     "title": "key dates",
     "first": {
-      "label": "First deadline",
+      "label": "first deadline",
       "items": [
-        "Logo on t-shirts guaranteed",
-        "Mention in early posts",
-        "Maximum visibility"
+        "logo on t-shirts guaranteed",
+        "mention in early posts",
+        "maximum visibility"
       ]
     },
     "last": {
-      "label": "Last call",
-      "description": "Final date to close sponsorship. Logo on merchandising not guaranteed."
+      "label": "last call",
+      "description": "final date to close sponsorship. logo on merchandising not guaranteed."
     },
-    "placeholder": "[DATE]"
+    "placeholder": "[date]"
   },
   "sidebar": {
-    "sponsors": "Sponsors",
+    "sponsors": "sponsors",
     "hero": "3x10",
-    "program": "Program",
-    "target": "Target",
-    "sponsorship": "Sponsorship",
-    "dates": "Dates"
+    "program": "program",
+    "target": "target",
+    "sponsorship": "sponsorship",
+    "dates": "dates"
+  },
+  "footer": {
+    "tagline": "3x10 sponsor deck"
   }
 }

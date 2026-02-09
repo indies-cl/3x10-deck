@@ -3,8 +3,8 @@
     "title": "3x10.org",
     "tagline": "3 días. $3.000 por founder. 10 builders técnicos",
     "subtitle": "el programa más intensivo para founders latinoamericanos",
-    "cta": "Construye, lanza y haz pitch. equity-free",
-    "problem": "LATAM tiene talento de clase mundial pero carece de capital de ejecución enfocado",
+    "cta": "construye, lanza y haz pitch. equity-free",
+    "problem": "latam tiene talento de clase mundial pero carece de capital de ejecución enfocado",
     "solution": "estamos solucionando eso",
     "imageAlt": "3x10"
   },
@@ -21,13 +21,13 @@
   },
   "target": {
     "title": "perfil",
-    "intro": "founders técnicos, 20-28 años, en LATAM",
+    "intro": "founders técnicos, 20-28 años, en latam",
     "profile": "perfil:",
     "items": [
       "co-founder técnico o solo-founder excepcional construyendo productos de software",
       "historial de shipping code (producto en vivo)",
       "señal temprana: usuarios, revenue, o métrica de traction convincente",
-      "puede comprometerse 3 días full-time en Santiago"
+      "puede comprometerse 3 días full-time en santiago"
     ],
     "notRequired": "no requerido: aceleradora formal, backing de VC",
     "required": "requerido: bias a la acción, prowess técnico, hambre"
@@ -36,64 +36,67 @@
     "title": "paquetes de sponsors",
     "intro": "contribuciones en efectivo o equity. flexible para cada sponsor.",
     "basic": {
-      "name": "Dev Credits Partner",
-      "price": "$2-3k",
-      "currency": "en credits",
+      "name": "dev credits partner",
+      "price": "mín. 3k",
+      "currency": "credits",
       "items": [
-        "Logo en landing page",
-        "Logo en merchandising (sm)",
-        "Mención en apertura/cierre"
+        "logo en landing page",
+        "logo en merchandising (sm)",
+        "mención en apertura/cierre"
       ],
-      "confirmed": "Sponsors confirmados:"
+      "confirmed": "sponsors confirmados:"
     },
     "partner": {
-      "name": "Gold Sponsor",
+      "name": "gold sponsor",
       "price": "$5k",
-      "currency": "USD",
+      "currency": "usd",
       "items": [
-        "Logo en landing page",
-        "Logo grande en merch",
-        "Mención en LinkedIn",
-        "Info de participantes"
+        "logo en landing page",
+        "logo grande en merch",
+        "mención en linkedin",
+        "info de participantes"
       ],
-      "confirmed": "Sponsors confirmados:"
+      "confirmed": "sponsors confirmados:"
     },
     "exclusive": {
-      "name": "Exclusive Sponsor",
+      "name": "exclusive sponsor",
       "price": "$10k",
-      "currency": "USD",
+      "currency": "usd",
       "items": [
-        "Evento conjunto: 3x10 & [Sponsor] Exclusive",
-        "Logo al mismo nivel que 3x10",
-        "Logo en stream en todo momento",
-        "Todo lo del plan Gold"
+        "evento conjunto: 3x10 & [sponsor] exclusive",
+        "logo al mismo nivel que 3x10",
+        "logo en stream en todo momento",
+        "todo lo del plan gold"
       ],
-      "confirmed": "Sponsor confirmado:"
+      "confirmed": "sponsor confirmado:"
     },
-    "placeholder": "[LOGO]"
+    "placeholder": "[logo]"
   },
   "dates": {
     "title": "fechas límite",
     "first": {
-      "label": "Primera fecha límite",
+      "label": "primera fecha límite",
       "items": [
-        "Logo en poleras asegurado",
-        "Mención en publicaciones tempranas",
-        "Máxima visibilidad"
+        "logo en poleras asegurado",
+        "mención en publicaciones tempranas",
+        "máxima visibilidad"
       ]
     },
     "last": {
-      "label": "Última llamada",
-      "description": "Fecha final para cerrar sponsorship. Logo en merchandising no asegurado."
+      "label": "última llamada",
+      "description": "fecha final para cerrar sponsorship. logo en merchandising no asegurado."
     },
-    "placeholder": "[FECHA]"
+    "placeholder": "[fecha]"
   },
   "sidebar": {
-    "sponsors": "Sponsors",
+    "sponsors": "sponsors",
     "hero": "3x10",
-    "program": "Programa",
-    "target": "Perfil",
-    "sponsorship": "Sponsorship",
-    "dates": "Fechas"
+    "program": "programa",
+    "target": "perfil",
+    "sponsorship": "sponsorship",
+    "dates": "fechas"
+  },
+  "footer": {
+    "tagline": "3x10 sponsor deck"
   }
 }
