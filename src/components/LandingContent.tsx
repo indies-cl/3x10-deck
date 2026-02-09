@@ -6,16 +6,19 @@ import { Sidebar } from "@/components/sidebar";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Separator } from "@/components/ui/separator";
+import { ImpactSection } from "@/components/ImpactSection";
 
 export function LandingContent() {
   const { t } = useTranslation();
   const [activeSection, setActiveSection] = useState("hero");
   const [sidebarOpen, setSidebarOpen] = useState(false);
+  const [lightboxImage, setLightboxImage] = useState<string | null>(null);
 
   const sections = [
     { id: "hero", labelKey: "sidebar.hero", icon: "→" },
     { id: "program", labelKey: "sidebar.program", icon: "→" },
     { id: "target", labelKey: "sidebar.target", icon: "→" },
+    { id: "impact", labelKey: "sidebar.impact", icon: "→" },
     { id: "sponsorship", labelKey: "sidebar.sponsorship", icon: "→" },
     { id: "dates", labelKey: "sidebar.dates", icon: "→" },
   ];
@@ -32,7 +35,7 @@ export function LandingContent() {
       { rootMargin: "-20% 0px -60% 0px" },
     );
 
-    ["hero", "program", "target", "sponsorship", "dates"].forEach((id) => {
+    ["hero", "program", "target", "impact", "sponsorship", "dates"].forEach((id) => {
       const element = document.getElementById(id);
       if (element) observer.observe(element);
     });
@@ -49,6 +52,21 @@ export function LandingContent() {
 
   return (
     <div className="flex min-h-screen">
+      {lightboxImage && (
+        <button
+          type="button"
+          onClick={() => setLightboxImage(null)}
+          className="fixed inset-0 z-50 bg-black/90 flex items-center justify-center p-4 cursor-default"
+          aria-label="Close"
+        >
+          <img
+            src={encodeURI(lightboxImage)}
+            alt=""
+            className="max-w-full max-h-full object-contain"
+            onClick={(e) => e.stopPropagation()}
+          />
+        </button>
+      )}
       <Sidebar
         sections={sections.map((s) => ({ ...s, label: t(s.labelKey) }))}
         activeSection={activeSection}
@@ -154,6 +172,9 @@ export function LandingContent() {
         </section>
 
         <Separator className="mb-16" />
+
+        {/* Impact */}
+        <ImpactSection lightboxImage={lightboxImage} setLightboxImage={setLightboxImage} />
 
         {/* Sponsorship */}
         <section id="sponsorship" className="mb-16">
