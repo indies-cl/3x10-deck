@@ -1,6 +1,6 @@
 {
   "$schema": "https://cdn.cloudflare.com/workers/wrangler/config-schema.json",
-  "name": "3x10-sponsor-deck",
+  "name": "3x10-deck",
   "compatibility_date": "2026-01-29",
   "assets": {
     "directory": "./out"
