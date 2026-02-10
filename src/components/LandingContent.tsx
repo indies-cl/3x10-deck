@@ -20,6 +20,7 @@ export function LandingContent() {
     { id: "target", labelKey: "sidebar.target", icon: "→" },
     { id: "impact", labelKey: "sidebar.impact", icon: "→" },
     { id: "sponsorship", labelKey: "sidebar.sponsorship", icon: "→" },
+    { id: "team", labelKey: "sidebar.team", icon: "→" },
     { id: "dates", labelKey: "sidebar.dates", icon: "→" },
     { id: "contact", labelKey: "sidebar.contact", icon: "→" },
   ];
@@ -36,7 +37,16 @@ export function LandingContent() {
       { rootMargin: "-20% 0px -60% 0px" },
     );
 
-    ["hero", "program", "target", "impact", "sponsorship", "dates", "contact"].forEach((id) => {
+    [
+      "hero",
+      "program",
+      "target",
+      "impact",
+      "sponsorship",
+      "team",
+      "dates",
+      "contact",
+    ].forEach((id) => {
       const element = document.getElementById(id);
       if (element) observer.observe(element);
     });
@@ -103,7 +113,7 @@ export function LandingContent() {
 
       <main className="flex-1 lg:ml-[280px] p-4 lg:p-8 max-w-4xl pt-20 lg:pt-8">
         {/* Hero */}
-        <section id="hero" className="mb-16 pt-8">
+        <section id="hero" className="mb-8 pt-8">
           <h2 className="text-2xl text-primary mb-6 uppercase tracking-wider">
             {t("hero.title")}
           </h2>
@@ -116,13 +126,6 @@ export function LandingContent() {
             {t("hero.problem")}
           </p>
           <p className="text-sm font-medium mb-6">{t("hero.solution")}</p>
-          <div className="w-full h-56 sm:h-72 border-2 border-dashed border-primary/40 flex items-center justify-center text-primary/60 text-sm overflow-hidden">
-            <img
-              src="/images/banana%20house.png"
-              alt={t("hero.imageAlt")}
-              className="w-full h-full object-cover"
-            />
-          </div>
           <p className="text-xs text-muted-foreground mt-4">
             {t("contact.lowKey")}{" "}
             <a
@@ -143,10 +146,10 @@ export function LandingContent() {
           </p>
         </section>
 
-        <Separator className="mb-16" />
+        <Separator className="mb-8" />
 
         {/* Program */}
-        <section id="program" className="mb-16">
+        <section id="program" className="mb-8">
           <h2 className="text-2xl text-primary mb-6 uppercase tracking-wider">
             [{t("program.title")}]
           </h2>
@@ -162,13 +165,22 @@ export function LandingContent() {
               ),
             )}
           </ul>
-          <p className="text-sm text-muted-foreground">{t("program.venue")}</p>
+          <p className="text-sm text-muted-foreground mb-4">
+            {t("program.venue")}
+          </p>
+          <div className="w-full h-56 sm:h-72 border-2 border-dashed border-primary/40 flex items-center justify-center text-primary/60 text-sm overflow-hidden">
+            <img
+              src="/images/banana%20house.png"
+              alt={t("hero.imageAlt")}
+              className="w-full h-full object-cover"
+            />
+          </div>
         </section>
 
-        <Separator className="mb-16" />
+        <Separator className="mb-8" />
 
         {/* Target */}
-        <section id="target" className="mb-16">
+        <section id="target" className="mb-8">
           <h2 className="text-2xl text-primary mb-6 uppercase tracking-wider">
             [{t("target.title")}]
           </h2>
@@ -190,13 +202,16 @@ export function LandingContent() {
           <p className="text-sm font-medium">{t("target.required")}</p>
         </section>
 
-        <Separator className="mb-16" />
+        <Separator className="mb-8" />
 
         {/* Impact */}
-        <ImpactSection lightboxImage={lightboxImage} setLightboxImage={setLightboxImage} />
+        <ImpactSection
+          lightboxImage={lightboxImage}
+          setLightboxImage={setLightboxImage}
+        />
 
         {/* Sponsorship */}
-        <section id="sponsorship" className="mb-16">
+        <section id="sponsorship" className="mb-8">
           <h2 className="text-2xl text-primary mb-6 uppercase tracking-wider">
             [{t("sponsorship.title")}]
           </h2>
@@ -299,10 +314,43 @@ export function LandingContent() {
           </div>
         </section>
 
-        <Separator className="mb-16" />
+        <Separator className="mb-8" />
+
+        {/* Team */}
+        <section id="team" className="mb-8">
+          <h2 className="text-2xl text-primary mb-6 uppercase tracking-wider">
+            [{t("team.title")}]
+          </h2>
+          <p className="text-sm text-muted-foreground mb-6">
+            {t("team.intro")}
+          </p>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+            {(["santiago", "damian", "nacho", "reno"] as const).map((key) => (
+              <Card key={key} className="border-border overflow-hidden">
+                <div className="aspect-square w-full overflow-hidden bg-muted">
+                  <img
+                    src={`/images/${key === "santiago" ? "santi.jpg" : key === "reno" ? "reno.jpeg" : `${key}.jpeg`}`}
+                    alt={t(`team.members.${key}.name`)}
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <CardContent className="p-4">
+                  <h3 className="text-primary font-medium text-sm uppercase tracking-wider mb-2">
+                    {t(`team.members.${key}.name`)}
+                  </h3>
+                  <p className="text-xs text-muted-foreground leading-relaxed">
+                    {t(`team.members.${key}.bio`)}
+                  </p>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+        </section>
+
+        <Separator className="mb-8" />
 
         {/* Dates */}
-        <section id="dates" className="mb-16">
+        <section id="dates" className="mb-8">
           <h2 className="text-2xl text-primary mb-6 uppercase tracking-wider">
             [{t("dates.title")}]
           </h2>
@@ -338,10 +386,10 @@ export function LandingContent() {
           </div>
         </section>
 
-        <Separator className="mb-16" />
+        <Separator className="mb-8" />
 
         {/* Contact */}
-        <section id="contact" className="mb-16">
+        <section id="contact" className="mb-8">
           <h2 className="text-2xl text-primary mb-2 uppercase tracking-wider">
             [{t("contact.title")}]
           </h2>

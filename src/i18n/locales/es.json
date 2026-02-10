@@ -85,12 +85,35 @@
     "placeholder": "[fecha]",
     "datesTbd": "fechas por definir"
   },
+  "team": {
+    "title": "equipo",
+    "intro": "juntos lideran indies.la, el colectivo más grande de builders en latam. eventos presenciales mensuales con ~75 asistentes",
+    "members": {
+      "santiago": {
+        "name": "santiago anticona",
+        "bio": "lidera shem fund. desplegó más de $15k en grants. respaldado por 1517 (danielle stratchman), inversor temprano en artificio (ai para autos autónomos). CS @ penn state"
+      },
+      "damian": {
+        "name": "damian panes",
+        "bio": "hackeó el sistema escolar de chile dos veces a los 14. speaker universitario a los 15. dueño de agencia de software y rodar, plataforma de crowd-investment."
+      },
+      "nacho": {
+        "name": "nacho bernardo",
+        "bio": "empezó a vender a los 17. llegó a $200k a los 19. lideró gtm en una software factory. lidera comunidad y partnerships en platanus ventures."
+      },
+      "reno": {
+        "name": "reno",
+        "bio": "college dropout. construyó plataforma para refugiados ucranianos. contribuidor open-source para transparencia gubernamental."
+      }
+    }
+  },
   "sidebar": {
     "sponsors": "sponsors",
     "hero": "3x10",
     "program": "programa",
     "target": "perfil",
     "sponsorship": "sponsorship",
+    "team": "equipo",
     "dates": "fechas",
     "impact": "distribution",
     "contact": "contacto"

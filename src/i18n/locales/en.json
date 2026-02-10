@@ -85,12 +85,35 @@
     "placeholder": "[date]",
     "datesTbd": "dates TBD"
   },
+  "team": {
+    "title": "team",
+    "intro": "together they lead indies.la, latam's largest builders collective. hosting monthly in-person events with ~75 attendees",
+    "members": {
+      "santiago": {
+        "name": "santiago anticona",
+        "bio": "leads shem fund. deployed over $15k in grants. backed by 1517 (danielle stratchman), early investor in artificio (ai for self-driving cars). CS @ penn state"
+      },
+      "damian": {
+        "name": "damian panes",
+        "bio": "hacked chile's school system twice at 14. university speaker at 15. owns a software agency and rodar, a crowd-investment platform."
+      },
+      "nacho": {
+        "name": "nacho bernardo",
+        "bio": "started selling at 17. hit $200k by 19. led gtm at a software factory. leads community and partnerships at platanus ventures."
+      },
+      "reno": {
+        "name": "reno",
+        "bio": "college dropout. built a platform for ukrainian refugees. open-source contributor for gov transparency."
+      }
+    }
+  },
   "sidebar": {
     "sponsors": "sponsors",
     "hero": "3x10",
     "program": "program",
     "target": "target",
     "sponsorship": "sponsorship",
+    "team": "team",
     "dates": "dates",
     "impact": "distribution",
     "contact": "contact"
