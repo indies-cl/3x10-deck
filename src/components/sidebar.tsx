@@ -60,7 +60,7 @@ export function Sidebar({
             <div className="mb-8 flex items-center justify-between">
               <div>
                 <h1 className="text-3xl text-primary tracking-tight">3x10</h1>
-                <span className="text-xs text-muted-foreground uppercase tracking-widest">
+                <span className="text-base text-muted-foreground uppercase tracking-widest">
                   {sponsorsLabel}
                 </span>
               </div>
@@ -96,14 +96,14 @@ export function Sidebar({
                     <button
                       onClick={() => handleNavigate(section.id)}
                       className={cn(
-                        "w-full text-left px-3 py-2 text-sm transition-all",
+                        "w-full text-left px-3 py-2 text-base transition-all",
                         "border border-transparent",
                         activeSection === section.id
                           ? "bg-primary text-primary-foreground border-primary hover:bg-primary hover:text-primary-foreground"
                           : "text-foreground/80 hover:border-primary/30 hover:text-primary",
                       )}
                     >
-                      <span className="text-xs mr-2 opacity-50">
+                      <span className="text-base mr-2 opacity-50">
                         {section.icon}
                       </span>
                       {section.label}
@@ -116,7 +116,7 @@ export function Sidebar({
             <Separator className="my-6" />
 
             {/* Footer */}
-            <div className="text-xs text-muted-foreground">
+            <div className="text-base text-muted-foreground">
               <Link
                 href={isSpanish ? "/" : "/es"}
                 className="hover:text-primary transition-colors"

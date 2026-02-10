@@ -60,20 +60,20 @@ export function ImpactSection({ lightboxImage, setLightboxImage }: ImpactSection
   return (
     <>
       <section id="impact" className="mb-16">
-        <h2 className="text-2xl text-primary mb-6 uppercase tracking-wider">
+        <h2 className="text-3xl text-primary mb-6 uppercase tracking-wider">
           {t("impact.distribution.title")}
         </h2>
-        <p className="text-sm leading-relaxed mb-6">
+        <p className="text-base leading-relaxed mb-6">
           {t("impact.intro")}
         </p>
 
         <div className="mb-10 p-4 border border-primary/30 bg-card/50">
-          <h3 className="text-primary text-sm uppercase tracking-wider mb-4">
+          <h3 className="text-primary text-base uppercase tracking-wider mb-4">
             {t("impact.distribution.strategyTitle")}
           </h3>
-          <p className="text-sm font-medium mb-2">{t("impact.distribution.preEvent")}</p>
-          <p className="text-sm font-medium mb-2">{t("impact.distribution.communityPartners")}</p>
-          <ul className="space-y-2 text-sm mb-4">
+          <p className="text-base font-medium mb-2">{t("impact.distribution.preEvent")}</p>
+          <p className="text-base font-medium mb-2">{t("impact.distribution.communityPartners")}</p>
+          <ul className="space-y-2 text-base mb-4">
             {(t("impact.distribution.partners", { returnObjects: true }) as string[]).map(
               (item, i) => (
                 <li key={i} className="flex gap-2">
@@ -83,7 +83,7 @@ export function ImpactSection({ lightboxImage, setLightboxImage }: ImpactSection
               )
             )}
           </ul>
-          <p className="text-sm font-medium">{t("impact.distribution.post")}</p>
+          <p className="text-base font-medium">{t("impact.distribution.post")}</p>
         </div>
 
         {impactoImages.length > 0 && (
@@ -174,7 +174,7 @@ export function ImpactSection({ lightboxImage, setLightboxImage }: ImpactSection
             </div>
           </div>
         </div>
-        <p className="text-sm text-muted-foreground text-center mt-4">
+        <p className="text-base text-muted-foreground text-center mt-4">
           {t("impact.albumLink")}{" "}
           <a
             href="#"

@@ -62,7 +62,7 @@ export function LandingContent() {
   };
 
   return (
-    <div className="flex min-h-screen">
+    <div className="flex min-h-screen min-w-0 overflow-x-hidden">
       {lightboxImage && (
         <button
           type="button"
@@ -108,25 +108,25 @@ export function LandingContent() {
             <line x1="3" y1="18" x2="21" y2="18" />
           </svg>
         </button>
-        <h1 className="text-xl text-primary tracking-tight ml-3">3x10</h1>
+        <h1 className="text-3xl text-primary tracking-tight ml-3">3x10</h1>
       </header>
 
-      <main className="flex-1 lg:ml-[280px] p-4 lg:p-8 max-w-4xl pt-20 lg:pt-8">
+      <main className="flex-1 min-w-0 w-full lg:ml-[280px] p-4 lg:p-8 max-w-4xl pt-20 lg:pt-8">
         {/* Hero */}
         <section id="hero" className="mb-8 pt-8">
-          <h2 className="text-2xl text-primary mb-6 uppercase tracking-wider">
+          <h2 className="text-3xl text-primary mb-6 uppercase tracking-wider">
             {t("hero.title")}
           </h2>
-          <p className="text-lg text-primary mb-2">{t("hero.tagline")}</p>
-          <p className="text-sm text-muted-foreground mb-4">
+          <p className="text-base text-primary mb-2">{t("hero.tagline")}</p>
+          <p className="text-base text-muted-foreground mb-4">
             {t("hero.subtitle")}
           </p>
-          <p className="text-sm font-medium mb-4">{t("hero.cta")}</p>
-          <p className="text-sm text-muted-foreground mb-2">
+          <p className="text-base font-medium mb-4">{t("hero.cta")}</p>
+          <p className="text-base text-muted-foreground mb-2">
             {t("hero.problem")}
           </p>
-          <p className="text-sm font-medium mb-6">{t("hero.solution")}</p>
-          <p className="text-xs text-muted-foreground mt-4">
+          <p className="text-base font-medium mb-6">{t("hero.solution")}</p>
+          <p className="text-base text-muted-foreground mt-4">
             {t("contact.lowKey")}{" "}
             <a
               href="https://www.linkedin.com/in/natochi/"
@@ -150,12 +150,12 @@ export function LandingContent() {
 
         {/* Program */}
         <section id="program" className="mb-8">
-          <h2 className="text-2xl text-primary mb-6 uppercase tracking-wider">
+          <h2 className="text-3xl text-primary mb-6 uppercase tracking-wider">
             [{t("program.title")}]
           </h2>
-          <p className="text-sm leading-relaxed mb-4">{t("program.intro")}</p>
-          <p className="text-sm font-medium mb-2">{t("program.whatHappens")}</p>
-          <ul className="space-y-2 text-sm mb-4">
+          <p className="text-base leading-relaxed mb-4">{t("program.intro")}</p>
+          <p className="text-base font-medium mb-2">{t("program.whatHappens")}</p>
+          <ul className="space-y-2 text-base mb-4">
             {(t("program.items", { returnObjects: true }) as string[]).map(
               (item, i) => (
                 <li key={i} className="flex gap-2">
@@ -165,10 +165,10 @@ export function LandingContent() {
               ),
             )}
           </ul>
-          <p className="text-sm text-muted-foreground mb-4">
+          <p className="text-base text-muted-foreground mb-4">
             {t("program.venue")}
           </p>
-          <div className="w-full h-56 sm:h-72 border-2 border-dashed border-primary/40 flex items-center justify-center text-primary/60 text-sm overflow-hidden">
+          <div className="w-full h-56 sm:h-72 border-2 border-dashed border-primary/40 flex items-center justify-center text-primary/60 text-base overflow-hidden">
             <img
               src="/images/banana%20house.png"
               alt={t("hero.imageAlt")}
@@ -181,12 +181,12 @@ export function LandingContent() {
 
         {/* Target */}
         <section id="target" className="mb-8">
-          <h2 className="text-2xl text-primary mb-6 uppercase tracking-wider">
+          <h2 className="text-3xl text-primary mb-6 uppercase tracking-wider">
             [{t("target.title")}]
           </h2>
-          <p className="text-sm leading-relaxed mb-4">{t("target.intro")}</p>
-          <p className="text-sm font-medium mb-2">{t("target.profile")}</p>
-          <ul className="space-y-2 text-sm mb-4">
+          <p className="text-base leading-relaxed mb-4">{t("target.intro")}</p>
+          <p className="text-base font-medium mb-2">{t("target.profile")}</p>
+          <ul className="space-y-2 text-base mb-4">
             {(t("target.items", { returnObjects: true }) as string[]).map(
               (item, i) => (
                 <li key={i} className="flex gap-2">
@@ -196,10 +196,10 @@ export function LandingContent() {
               ),
             )}
           </ul>
-          <p className="text-sm text-muted-foreground mb-1">
+          <p className="text-base text-muted-foreground mb-1">
             {t("target.notRequired")}
           </p>
-          <p className="text-sm font-medium">{t("target.required")}</p>
+          <p className="text-base font-medium">{t("target.required")}</p>
         </section>
 
         <Separator className="mb-8" />
@@ -212,30 +212,30 @@ export function LandingContent() {
 
         {/* Sponsorship */}
         <section id="sponsorship" className="mb-8">
-          <h2 className="text-2xl text-primary mb-6 uppercase tracking-wider">
+          <h2 className="text-3xl text-primary mb-6 uppercase tracking-wider">
             [{t("sponsorship.title")}]
           </h2>
-          <p className="text-sm text-muted-foreground mb-6">
+          <p className="text-base text-muted-foreground mb-6">
             {t("sponsorship.intro")}
           </p>
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-4">
             <Card className="border-border">
               <CardHeader className="border-b border-border pb-4">
                 <div className="text-center">
-                  <span className="text-2xl block mb-2">◇</span>
-                  <CardTitle className="text-primary uppercase text-sm tracking-wider">
+                  <span className="text-3xl block mb-2">◇</span>
+                  <CardTitle className="text-primary uppercase text-base tracking-wider">
                     {t("sponsorship.basic.name")}
                   </CardTitle>
-                  <p className="text-2xl mt-2">
+                  <p className="text-3xl mt-2">
                     {t("sponsorship.basic.price")}
                   </p>
-                  <span className="text-xs text-muted-foreground">
+                  <span className="text-base text-muted-foreground">
                     {t("sponsorship.basic.currency")}
                   </span>
                 </div>
               </CardHeader>
               <CardContent className="p-4">
-                <ul className="text-xs space-y-2">
+                <ul className="text-base space-y-2">
                   {(
                     t("sponsorship.basic.items", {
                       returnObjects: true,
@@ -253,20 +253,20 @@ export function LandingContent() {
             <Card className="border-primary">
               <CardHeader className="border-b border-primary pb-4 bg-primary/5">
                 <div className="text-center">
-                  <span className="text-2xl block mb-2">◆</span>
-                  <CardTitle className="text-primary uppercase text-sm tracking-wider">
+                  <span className="text-3xl block mb-2">◆</span>
+                  <CardTitle className="text-primary uppercase text-base tracking-wider">
                     {t("sponsorship.partner.name")}
                   </CardTitle>
-                  <p className="text-2xl mt-2">
+                  <p className="text-3xl mt-2">
                     {t("sponsorship.partner.price")}
                   </p>
-                  <span className="text-xs text-muted-foreground">
+                  <span className="text-base text-muted-foreground">
                     {t("sponsorship.partner.currency")}
                   </span>
                 </div>
               </CardHeader>
               <CardContent className="p-4">
-                <ul className="text-xs space-y-2">
+                <ul className="text-base space-y-2">
                   {(
                     t("sponsorship.partner.items", {
                       returnObjects: true,
@@ -284,20 +284,20 @@ export function LandingContent() {
             <Card className="border-primary border-2 bg-primary/5">
               <CardHeader className="border-b border-primary pb-4">
                 <div className="text-center">
-                  <span className="text-2xl block mb-2">★</span>
-                  <CardTitle className="text-primary uppercase text-sm tracking-wider">
+                  <span className="text-3xl block mb-2">★</span>
+                  <CardTitle className="text-primary uppercase text-base tracking-wider">
                     {t("sponsorship.exclusive.name")}
                   </CardTitle>
-                  <p className="text-2xl mt-2">
+                  <p className="text-3xl mt-2">
                     {t("sponsorship.exclusive.price")}
                   </p>
-                  <span className="text-xs text-muted-foreground">
+                  <span className="text-base text-muted-foreground">
                     {t("sponsorship.exclusive.currency")}
                   </span>
                 </div>
               </CardHeader>
               <CardContent className="p-4">
-                <ul className="text-xs space-y-2">
+                <ul className="text-base space-y-2">
                   {(
                     t("sponsorship.exclusive.items", {
                       returnObjects: true,
@@ -318,10 +318,10 @@ export function LandingContent() {
 
         {/* Team */}
         <section id="team" className="mb-8">
-          <h2 className="text-2xl text-primary mb-6 uppercase tracking-wider">
+          <h2 className="text-3xl text-primary mb-6 uppercase tracking-wider">
             [{t("team.title")}]
           </h2>
-          <p className="text-sm text-muted-foreground mb-6">
+          <p className="text-base text-muted-foreground mb-6">
             {t("team.intro")}
           </p>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
@@ -335,10 +335,10 @@ export function LandingContent() {
                   />
                 </div>
                 <CardContent className="p-4">
-                  <h3 className="text-primary font-medium text-sm uppercase tracking-wider mb-2">
+                  <h3 className="text-primary font-medium text-base uppercase tracking-wider mb-2">
                     {t(`team.members.${key}.name`)}
                   </h3>
-                  <p className="text-xs text-muted-foreground leading-relaxed">
+                  <p className="text-base text-muted-foreground leading-relaxed">
                     {t(`team.members.${key}.bio`)}
                   </p>
                 </CardContent>
@@ -351,17 +351,17 @@ export function LandingContent() {
 
         {/* Dates */}
         <section id="dates" className="mb-8">
-          <h2 className="text-2xl text-primary mb-6 uppercase tracking-wider">
+          <h2 className="text-3xl text-primary mb-6 uppercase tracking-wider">
             [{t("dates.title")}]
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             <Card>
               <CardContent className="p-6">
-                <h3 className="text-primary text-sm uppercase tracking-wider mb-2">
+                <h3 className="text-primary text-base uppercase tracking-wider mb-2">
                   {t("dates.first.label")}
                 </h3>
                 <Badge className="mb-4">{t("dates.datesTbd")}</Badge>
-                <ul className="text-xs space-y-1 text-muted-foreground">
+                <ul className="text-base space-y-1 text-muted-foreground">
                   {(
                     t("dates.first.items", { returnObjects: true }) as string[]
                   ).map((item, i) => (
@@ -372,13 +372,13 @@ export function LandingContent() {
             </Card>
             <Card>
               <CardContent className="p-6">
-                <h3 className="text-primary text-sm uppercase tracking-wider mb-2">
+                <h3 className="text-primary text-base uppercase tracking-wider mb-2">
                   {t("dates.last.label")}
                 </h3>
                 <Badge variant="secondary" className="mb-4">
                   {t("dates.datesTbd")}
                 </Badge>
-                <p className="text-xs text-muted-foreground">
+                <p className="text-base text-muted-foreground">
                   {t("dates.last.description")}
                 </p>
               </CardContent>
@@ -390,10 +390,10 @@ export function LandingContent() {
 
         {/* Contact */}
         <section id="contact" className="mb-8">
-          <h2 className="text-2xl text-primary mb-2 uppercase tracking-wider">
+          <h2 className="text-3xl text-primary mb-2 uppercase tracking-wider">
             [{t("contact.title")}]
           </h2>
-          <p className="text-sm text-muted-foreground mb-6">
+          <p className="text-base text-muted-foreground mb-6">
             {t("contact.subtitle")} {t("contact.reachOut")}.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">

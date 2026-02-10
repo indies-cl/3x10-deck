@@ -135,7 +135,10 @@
     font-family: 'GeistPixel Square', monospace;
   }
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground text-base overflow-x-hidden;
+  }
+  html {
+    overflow-wrap: break-word;
   }
 }
 
